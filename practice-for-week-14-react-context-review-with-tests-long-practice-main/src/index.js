@@ -7,11 +7,11 @@ import {CoffeeProvider} from './context/CoffeeContext';
 
 const Root = () => {
   return (
-      <BrowserRouter>
-        <CoffeeProvider>
-          <App />
-        </CoffeeProvider>
-      </BrowserRouter>
+    <BrowserRouter>
+      <CoffeeProvider>
+        <App />
+      </CoffeeProvider>
+    </BrowserRouter>
   );
 };
 
