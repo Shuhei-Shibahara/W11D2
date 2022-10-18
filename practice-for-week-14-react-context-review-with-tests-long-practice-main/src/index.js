@@ -3,15 +3,15 @@ import ReactDOM from 'react-dom';
 import { BrowserRouter } from 'react-router-dom';
 import './index.css';
 import App from './App';
-import CoffeeProvider from './context/CoffeeContext';
+import {CoffeeProvider} from './context/CoffeeContext';
 
 const Root = () => {
   return (
-    <CoffeeProvider>
       <BrowserRouter>
-        <App />
+        <CoffeeProvider>
+          <App />
+        </CoffeeProvider>
       </BrowserRouter>
-    </CoffeeProvider>
   );
 };
 
