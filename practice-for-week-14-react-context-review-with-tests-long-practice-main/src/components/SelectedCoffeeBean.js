@@ -1,13 +1,11 @@
-import { CoffeeBeanContext } from "../context/CoffeeContext";
-
-
+import { useCoffeeBeanContext } from "../context/CoffeeContext";
 
 const SelectedCoffeeBean = () => {
-  const {coffeeBean, setCoffeeBean} = CoffeeBeanContext();
+  const {coffeeBean, setCoffeeBean} = useCoffeeBeanContext();
   console.log(coffeeBean)
   return (
     <div className="selected-coffee">
-      <h2>{coffeeBean}</h2>
+      <h2>{coffeeBean.name}</h2>
     </div>
   )
 }

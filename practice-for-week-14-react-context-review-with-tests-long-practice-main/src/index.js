@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import { BrowserRouter } from 'react-router-dom';
 import './index.css';
 import App from './App';
-import {CoffeeProvider} from './context/CoffeeContext';
+import CoffeeProvider from './context/CoffeeContext';
 
 const Root = () => {
   return (

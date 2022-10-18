@@ -3,7 +3,7 @@ import coffeeBeans from '../mockData/coffeeBeans.json';
 
 export const CoffeeContext = createContext();
 
-export const CoffeeProvider = (props) => {
+export default function CoffeeProvider(props){
   const [coffeeBean, setCoffeeBean] = useState(coffeeBeans[0]);
 
   const setCoffeeBeanId = (coffeeBeanId) => {
@@ -25,6 +25,6 @@ export const CoffeeProvider = (props) => {
   );
 }
 
-export const CoffeeBeanContext = () => {
+export const useCoffeeBeanContext = () => {
   return useContext(CoffeeContext)
 }
